@@ -185,6 +185,10 @@ public class ANTLRLexerAdaptor extends com.intellij.lexer.LexerBase {
 			return null;
 		}
 
+		if ( tokenElementTypes == null) {
+			return null;
+		}
+
 		return tokenElementTypes.get(antlrTokenType);
 	}
 
